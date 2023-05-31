@@ -24,6 +24,11 @@ struct ContentView: View {
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
                         Image(systemName: "star.leadinghalf.filled")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.leadinghalf.filled")
                     }
                     Text("(Reviews 360)")
                 }.foregroundColor(.orange).font(.caption)

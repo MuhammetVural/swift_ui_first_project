@@ -24,11 +24,6 @@ struct ContentView: View {
                         Image(systemName: "star.fill")
                         Image(systemName: "star.fill")
                         Image(systemName: "star.leadinghalf.filled")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.leadinghalf.filled")
                     }
                     Text("(Reviews 360)")
                 }.foregroundColor(.orange).font(.caption)
@@ -42,7 +37,7 @@ struct ContentView: View {
                 Image(systemName: "fork.knife")
                 Image(systemName: "binoculars.fill")
             }
-        }.padding()
+        }.padding().background(Rectangle().foregroundColor(.white).cornerRadius(15).shadow(radius: 15)).padding()
         
         
     }

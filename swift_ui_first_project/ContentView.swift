@@ -9,13 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        VStack(alignment: .leading, spacing: 20) {
+            Image("play_store_512")
+                .resizable().aspectRatio(contentMode: .fit).cornerRadius(15)
+            HStack{
+                
+                Text("Hello, world!").font(.title).fontWeight(.bold)
+                Spacer()
+                
+                VStack{
+                    HStack{
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.leadinghalf.filled")
+                    }
+                    Text("(Reviews 360)")
+                }.foregroundColor(.orange).font(.caption)
+                
+                
+            }
+            
+            Text("Lorem ipsun Lorem ipsunLorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun  vLorem ipsun")
+            HStack{
+                Spacer()
+                Image(systemName: "fork.knife")
+                Image(systemName: "binoculars.fill")
+            }
+        }.padding()
+        
+        
     }
 }
 
